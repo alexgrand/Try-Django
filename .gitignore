@@ -1,1 +1,3 @@
 /trydjango
+/__pycache__
+*.cpython*
