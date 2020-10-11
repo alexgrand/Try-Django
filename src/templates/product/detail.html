@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block title %}
-<title>Product {{ title }}</title>
+<title>Product {{ obj.title }}</title>
 {% endblock%}
 
 {% block content %}
-<h1>{{ title }}</h1>
+<h1>{{ obj.title }}</h1>
 {% if description %}
-    <p>{{ description}}}</p>
+    <p>{{ obj.description}}}</p>
 {% else %}
     <p>Description coming soon</p>
 {% endif%}
-<p>{{ summary }}</p>
-<p><strong>Price: </strong>{{ price }}$</p>
+<p>{{ obj.summary }}</p>
+<p><strong>Price: </strong>{{ obj.price }}$</p>
 {% endblock %}
