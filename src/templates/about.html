@@ -17,7 +17,11 @@
     <p>
         <ul><strong>Authors:</strong>
             {% for author in authors %}
-            <li>{{ forloop.counter }} - {{ author }}</li>
+                {% if author == 'Alex' %}
+                <li>{{ forloop.counter }} - <strong>{{ author|upper }}</strong></li>
+                {% else %}
+                <li>{{ forloop.counter }} - {{ author }}</li>
+                {% endif %}
             {% endfor %}
         </ul>
     </p>
