@@ -12,4 +12,9 @@ def contact_view(request, *args, **kwargs):
 
 
 def about_view(request, *args, **kwargs):
-    return render(request, 'about.html')
+    context = {
+        'text': 'This is about us',
+        'phone': '+38098765434',
+        'authors': ['Alex', 'Daisy', 'Grand'],
+    }
+    return render(request, 'about.html', context)
