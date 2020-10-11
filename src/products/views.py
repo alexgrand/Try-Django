@@ -6,7 +6,7 @@ from .forms import ProductForm
 # Create your views here.
 
 def product_create_view(request):
-    form = ProductForm(request.Post or None)
+    form = ProductForm(request.POST or None)
     if form.is_valid():
         form.save()
     
