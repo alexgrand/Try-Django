@@ -5,5 +5,12 @@
 {% endblock%}
 
 {% block content %}
-
+<h1>{{ title }}</h1>
+{% if description %}
+    <p>{{ description}}}</p>
+{% else %}
+    <p>Description coming soon</p>
+{% endif%}
+<p>{{ summary }}</p>
+<p><strong>Price: </strong>{{ price }}$</p>
 {% endblock %}
