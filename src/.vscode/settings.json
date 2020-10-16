@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Users\\Alex\\Study\\django\\try-django\\trydjango\\Scripts\\python.exe",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+}
